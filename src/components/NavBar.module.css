@@ -24,3 +24,13 @@ nav{
     margin-right:15px;
     color:rgb(233, 16, 117);
 }
+
+button{
+    color: white;
+    background-color: rgb(229, 138, 173);
+    border-color:rgb(229, 138, 173);
+    font-size: medium;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}

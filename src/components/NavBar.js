@@ -8,9 +8,9 @@ function NavBar(props) {
         <nav>
             <h1>DETOX DEPORTIVO</h1>
              <ul>
-                 <li>INICIO</li>
-                 <li>PRODUCTOS</li>
-                 <li>CONTACTO</li>
+                 <button>INICIO</button>
+                 <button>PRODUCTOS</button>
+                 <button>CONTACTO</button>
             </ul>
             <div className={styles.cartStyle}>
                 <CartWidget/>0
