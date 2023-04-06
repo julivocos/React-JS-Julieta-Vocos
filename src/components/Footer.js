@@ -1,5 +1,11 @@
 function Footer(props) {
-    return <div>Soy el Footer</div>;
+    return <div style= {{
+        height:"20vh",
+        backgroundColor: "black",
+        color: "white",
+        textAlign:"center",
+        }}
+    ><p></p></div>;
 }
 
 export default Footer;

@@ -1,5 +1,5 @@
 import styles from "./NavBar.module.css";
-import CartWidget from "./CartWidget/CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
 
 
 
@@ -13,7 +13,7 @@ function NavBar(props) {
                  <button>CONTACTO</button>
             </ul>
             <div className={styles.cartStyle}>
-                <CartWidget/>0
+                <CartWidget />
             </div>
         </nav>
             
