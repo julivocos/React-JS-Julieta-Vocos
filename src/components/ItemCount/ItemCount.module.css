@@ -1,12 +1,14 @@
 .divAgregarCarrito{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 18px;
     font-weight: bold;
+   
 
 }
 
 .buttonCarrito{
     font-size: larger;
+    color:black;
 }

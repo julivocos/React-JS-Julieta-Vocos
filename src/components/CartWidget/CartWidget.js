@@ -9,6 +9,9 @@ const CartWidget = ()=> {
             width: "7vh",
             borderRadius:"8px",
             textAlign:"center",
+            paddingLeft:"15px",
+            paddingRight:"15px"
+
             
         }}>
            <AiOutlineShoppingCart />

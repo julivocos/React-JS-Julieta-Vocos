@@ -1,8 +1,9 @@
 .divProducts{
     display:flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
+    margin-top: 35px;
     
 }
 

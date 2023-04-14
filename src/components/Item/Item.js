@@ -10,13 +10,14 @@ const Item =({id, nombre, talle, precio, stock, img}) =>{
                 <img src={img} alt={nombre} />
             </picture>
             <section>
-                <p>Talle: {talle}</p>
-                <p>Precio: {precio}</p>
-                <p>stock: {stock}</p>
+                <p>Precio: ${precio}</p>
             </section>
+            <footer>
+                <button className={styles.buttonDetalle} >Ver detalle</button>
+            </footer>
           
         </article>
     )
 }
 
-export default Item
+export default Item;

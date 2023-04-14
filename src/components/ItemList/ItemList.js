@@ -14,4 +14,4 @@ import styles from "./ItemList.module.css"
 
 
 
-export default ItemList
+export default ItemList;
