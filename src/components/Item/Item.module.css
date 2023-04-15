@@ -1,17 +1,18 @@
 .articleProducts{
-    background-color: rgb(236, 160, 211);
+    background-color:rgb(236, 160, 211);
     color: black;
     width: 25%;
-    height: 50%;
+    height: 100%;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
+    padding-bottom: 40px;
     
 }
 
 img {
-    width: 130px;
+    width: 150px;
     height: 170px;
 }
 
@@ -19,5 +20,13 @@ img {
     background-color: rgba(29, 31, 153, 0.952);
     margin-bottom: 15px;
     border: 0px;
+    color: white;
+    font-size: medium;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    
 
 }

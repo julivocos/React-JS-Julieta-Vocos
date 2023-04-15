@@ -36,3 +36,13 @@ button{
     padding: 15px;
     cursor: pointer;
 }
+
+.NavLink{
+    color: white;
+    background-color: rgb(229, 138, 173);
+    border-color:rgb(229, 138, 173);
+    font-size: medium;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+}

@@ -2,43 +2,26 @@ import NavBar from "./NavBar/NavBar";
 import ItemListContainer from "./ItemListContainer/ItemListContainer";
 import Footer from "./Footer";
 import styles from "./Contenedor.module.css";
-import ItemCount from './ItemCount/ItemCount';
 import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Contenedor(props) {
 
-    const handle = (e) =>{
-        console.log(e.target.innerText);
-    };
-
     return (
         <div className={styles.contenedorStyle}>
             <BrowserRouter>
-                <NavBar handleClick={handle}/>
+                <NavBar /> 
                 <div className={styles.divMain}>
-                     <Routes>
+                    <Routes>
                         <Route path="/" element={<ItemListContainer greeting={'Tienda virtual de ropa de mujer'}/>}/>
-                        <Route path="/page2" element={<ItemDetailContainer />}/>
-
+                        <Route path="/categoria/:categoryId" element={<ItemListContainer />}/>
+                        <Route path="/item/:itemId" element={<ItemDetailContainer />}/>
+                        <Route path="*" element={ <h1>NOT FOUND</h1>}/>
                     </Routes>
                 </div>
                 <Footer/>
             </BrowserRouter>
         </div>
-
-
-
-        // <div className={styles.contenedorStyle}>
-        //     <NavBar/>
-        //      <div className={styles.divMain}>
-        //         <ItemListContainer />
-        //         <ItemDetailContainer />
-        //     </div>
-        //      <Footer/>
-       
-        // </div>
-
     );
 }
 

@@ -31,7 +31,8 @@ const ItemCount = ({stock, initial, onAdd})=> {
             </div>
             <div>
                 <button style={{
-                    color:"black"
+                    color:"black",
+                    marginBottom:"15px",
                 }} onClick={() =>onAdd(quantity)} disabled={!stock}>Agregar al carrito</button>
             </div>
         </div>

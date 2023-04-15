@@ -6,11 +6,12 @@ const CartWidget = ()=> {
 
             fontSize: "25px",
             backgroundColor:" rgb(229, 138, 173)",
-            width: "7vh",
+            width: "10vh",
             borderRadius:"8px",
             textAlign:"center",
             paddingLeft:"15px",
-            paddingRight:"15px"
+            paddingRight:"15px",
+            paddingTop:"10px",
 
             
         }}>
