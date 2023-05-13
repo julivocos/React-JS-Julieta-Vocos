@@ -1,0 +1,43 @@
+input{
+    width: 30%;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-size: 25px;
+}
+
+label{
+    font-size: 25px;
+    font-style: italic;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.buttonCrearOrden{
+    width: 20%;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    align-self: center;
+}
+
+.linkCart{
+     color: black;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+
+.idContainer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}

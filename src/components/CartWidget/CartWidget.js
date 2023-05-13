@@ -1,23 +1,20 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { useContext } from "react";
+import { CartContext } from "../../Data/Context/CartContext";
+import { Link } from "react-router-dom";
+import styles from "./CartWidget.module.css"
 
 const CartWidget = ()=> {
+    const { totalQuantity } = useContext (CartContext)
+
     return (
-        <div style= {{
-
-            fontSize: "25px",
-            backgroundColor:" rgb(229, 138, 173)",
-            width: "10vh",
-            borderRadius:"8px",
-            textAlign:"center",
-            paddingLeft:"15px",
-            paddingRight:"15px",
-            paddingTop:"10px",
-
-            
+        <Link to='/cart' className={styles.cartWidget} style={{
+            display: totalQuantity > 0 ? 'block' : 'none'
         }}>
-           <AiOutlineShoppingCart />
-            0
-        </div>
+            
+            <AiOutlineShoppingCart />
+            {totalQuantity}
+        </Link>
     )
 }
 

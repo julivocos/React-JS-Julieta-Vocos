@@ -20,20 +20,19 @@ const ItemCount = ({stock, initial, onAdd})=> {
     return (
         <div >
             <div className={styles.divAgregarCarrito}>
-                <button className={styles.buttonCarrito} onClick={decrement}>-</button>
+                <button className={styles.buttonCount} onClick={decrement}>-</button>
                 <h4 style={{
                     marginLeft:"20px",
                     marginRight:"20px",
                    
                 }}>
                     {quantity}</h4>
-                <button  className={styles.buttonCarrito} onClick={increment}>+</button>
+                <button  className={styles.buttonCount} onClick={increment}>+</button>
             </div>
             <div>
-                <button style={{
-                    color:"black",
-                    marginBottom:"15px",
-                }} onClick={() =>onAdd(quantity)} disabled={!stock}>Agregar al carrito</button>
+                <button className={styles.buttonAgregar}
+                  
+                 onClick={() =>onAdd(quantity)} disabled={!stock}>Agregar al carrito</button>
             </div>
         </div>
     )

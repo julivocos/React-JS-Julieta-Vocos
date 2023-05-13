@@ -1,37 +1,50 @@
 import ItemCount from "../ItemCount/ItemCount";
+import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import styles from "./itemDetail.module.css"
+import { CartContext } from "../../Data/Context/CartContext";
 
-const ItemDetail =({id, nombre, talle, precio, stock, img, categoria}) =>{
+const ItemDetail =({id, nombre, talle, precio, stock, imagen,Descripción}) =>{
+    const [quantityAdded, SetquantityAdded] = useState(0)
+
+    const { addItem } = useContext (CartContext)
+    
+
+    const handleOnAdd = (quantity) => {
+        SetquantityAdded(quantity)
+
+        const item = {
+            id, nombre, precio
+        }
+        addItem (item , quantity)
+    }
+    
+    
     return(
-        <article style={{
-            backgroundColor:"rgb(236, 183, 219)",
-            borderRadius:"15px",
-            marginBottom:"15px",
-            marginTop:"25px",
-            width : "40%",
-            height:"70%",
-            marginLeft:"30%",
-            marginRight:"30%",
-            color: "black",
-            fontSize:"20px",
-            paddingTop:"20px",
-
-            
-        }} >
+        <article className={styles.linkCarrito}>
             <div>
                 <h2>{nombre} </h2>
+                <h3>Precio ${precio}</h3>
             </div>
             <picture>
-                <img style={{width:"250px", height:"300px",borderRadius:"20px",}} src={img} alt={nombre} />
+                <img style={{width:"200px", height:"250px",borderRadius:"20px",}} src={imagen} alt={nombre} />
             </picture>
             <section>
-                <p>Categoria: {categoria}</p>
-                <p>Precio: ${precio}</p>
+                <p>{Descripción}</p>
+                <p>Talle: {talle}</p>
                 <p>Stock disponible: {stock}</p>
-                <p>Talles: {talle}</p>
                 
             </section>
             <footer>
-                <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log('Cantidad Agregada', quantity)}/>
+                {
+                    quantityAdded > 0 ? (
+                        <Link to='/cart' className={styles.linkTerminar}>Terminar compra</Link> 
+                    ) : (    
+                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+
+                    )
+                }
+               
             </footer>
         </article>
     )

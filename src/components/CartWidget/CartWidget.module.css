@@ -1,0 +1,11 @@
+.cartWidget{
+    font-size: 25px;
+    background-color: rgb(229, 138, 173);
+    width: 10vh;
+    border-radius:8px;
+     text-align:center;
+     padding-left:15px;
+    padding-right:15px;
+     padding-top:10px;
+     color: black;
+}

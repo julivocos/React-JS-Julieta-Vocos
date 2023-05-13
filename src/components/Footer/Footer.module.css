@@ -1,0 +1,11 @@
+.footerContain{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center ;
+    height: 20vh;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    
+}

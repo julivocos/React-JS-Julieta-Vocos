@@ -1,0 +1,29 @@
+.linkCarrito{
+    background-color:rgb(236, 183, 219);
+    border-radius:15px;
+    margin-bottom:15px;
+    margin-top: 25px;
+    width : 35%;
+    margin-left:32.5%;
+    margin-right:32.5%;
+    color: black;
+    font-weight:500;
+    font-size: 15px;
+    padding-top:2px;
+    padding-bottom: 20px;
+    
+
+}
+
+.linkTerminar{
+        font-size: large;
+        color:white;
+        background-color: rgb(177, 3, 70);
+        border-color:rgb(229, 138, 173);
+        border-radius: 15px;
+        padding: 10px;
+        cursor: pointer;
+      
+    
+}
+
